@@ -1,4 +1,4 @@
-defcalculate():
+def calculate():
     operation = input('''
 Please type in the math operation you would like to complete:
 + for addition
@@ -25,7 +25,9 @@ Please type in the math operation you would like to complete:
     else: 
         print('You have not typed a valid operator,please run the program again.')
     
-    #Add again() function to calculate() function again()
+    #Add again() function to calculate() function 
+    again()
+
 def again():
     calc_again = input('''
     Do you want to calculate again?
@@ -33,7 +35,7 @@ def again():
     ''')
     if calc_again.upper() == 'Y':
         calculate()
-    elif calc_again.upper == 'N':
+    elif calc_again.upper() == 'N':
         print('See you later.')
     else:
         again()
